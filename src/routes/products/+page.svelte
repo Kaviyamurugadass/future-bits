@@ -1,5 +1,7 @@
 <script>
 	import { onMount } from 'svelte';
+	import { base } from "$app/paths";
+
 	let isVisible = false;
 
 	onMount(() => {
@@ -37,7 +39,7 @@
 				<div class="grid grid-cols-1 gap-8 lg:grid-cols-2">
 					<div class="relative">
 						<div class="aspect-w-16 aspect-h-9">
-							<img class="object-cover shadow-lg rounded-lg" src="/images/Manager Desk.png" alt="Quick Receipts Dashboard">
+							<img class="object-cover shadow-lg rounded-lg" src="{base}/images/Manager Desk.png" alt="Quick Receipts Dashboard">
 						</div>
 					</div>
 					<div>
@@ -116,7 +118,7 @@
 							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
 						</svg>
 					</a>
-					<a href="/contact" class="inline-flex items-center px-6 py-3 border border-purple-900 text-base font-medium rounded-md text-purple-900 bg-white hover:bg-gray-50">
+					<a href="{base}/contact" class="inline-flex items-center px-6 py-3 border border-purple-900 text-base font-medium rounded-md text-purple-900 bg-white hover:bg-gray-50">
 						Learn More
 						<svg class="ml-3 -mr-1 h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>

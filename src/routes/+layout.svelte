@@ -4,6 +4,8 @@
 	import { browser } from '$app/environment';
 	import { onMount } from 'svelte';
 	import { page } from '$app/stores';
+	import { base } from '$app/paths';
+
 
 	// Initialize PostHog only when running in the browser
 	onMount(() => {
@@ -27,17 +29,17 @@
 			<div class="flex justify-between h-16">
 				<div class="flex">
 					<div class="flex-shrink-0 flex items-center">
-						<a href="/" class="text-2xl font-bold text-white">Future Bits</a>
+						<a href="{base}/" class="text-2xl font-bold text-white">Future Bits</a>
 					</div>
 				</div>
 				
 				<!-- Desktop Navigation -->
 				<div class="hidden sm:flex sm:items-center space-x-6">
-					<a href="/" class="px-4 py-2 rounded-md text-sm font-medium {currentPath === '/' ? 'text-white bg-purple-700' : 'text-purple-100 hover:text-white hover:bg-purple-800'}">Home</a>
-					<a href="/about" class="px-4 py-2 rounded-md text-sm font-medium {currentPath === '/about' ? 'text-white bg-purple-700' : 'text-purple-100 hover:text-white hover:bg-purple-800'}">About Us</a>
-					<a href="/products" class="px-4 py-2 rounded-md text-sm font-medium {currentPath === '/products' ? 'text-white bg-purple-700' : 'text-purple-100 hover:text-white hover:bg-purple-800'}">Our Products</a>
-					<a href="/contact" class="px-4 py-2 rounded-md text-sm font-medium {currentPath === '/contact' ? 'text-white bg-purple-700' : 'text-purple-100 hover:text-white hover:bg-purple-800'}">Contact Us</a>
-					<a href="/privacy" class="px-4 py-2 rounded-md text-sm font-medium {currentPath === '/privacy' ? 'text-white bg-purple-700' : 'text-purple-100 hover:text-white hover:bg-purple-800'}">Privacy Policy</a>
+					<a href="{base}/" class="px-4 py-2 rounded-md text-sm font-medium {currentPath === '/' ? 'text-white bg-purple-700' : 'text-purple-100 hover:text-white hover:bg-purple-800'}">Home</a>
+					<a href="{base}/about" class="px-4 py-2 rounded-md text-sm font-medium {currentPath === '/about' ? 'text-white bg-purple-700' : 'text-purple-100 hover:text-white hover:bg-purple-800'}">About Us</a>
+					<a href="{base}/products" class="px-4 py-2 rounded-md text-sm font-medium {currentPath === '/products' ? 'text-white bg-purple-700' : 'text-purple-100 hover:text-white hover:bg-purple-800'}">Our Products</a>
+					<a href="{base}/contact" class="px-4 py-2 rounded-md text-sm font-medium {currentPath === '/contact' ? 'text-white bg-purple-700' : 'text-purple-100 hover:text-white hover:bg-purple-800'}">Contact Us</a>
+					<a href="{base}/privacy" class="px-4 py-2 rounded-md text-sm font-medium {currentPath === '/privacy' ? 'text-white bg-purple-700' : 'text-purple-100 hover:text-white hover:bg-purple-800'}">Privacy Policy</a>
 				</div>
 
 				<!-- Mobile menu button -->
@@ -59,11 +61,11 @@
 		{#if isMenuOpen}
 			<div class="sm:hidden bg-purple-900 border-t border-purple-800">
 				<div class="pt-2 pb-3 space-y-1">
-					<a href="/" class="block px-3 py-2 text-base font-medium {currentPath === '/' ? 'text-white bg-purple-700' : 'text-purple-100 hover:text-white hover:bg-purple-800'}">Home</a>
-					<a href="/about" class="block px-3 py-2 text-base font-medium {currentPath === '/about' ? 'text-white bg-purple-700' : 'text-purple-100 hover:text-white hover:bg-purple-800'}">About Us</a>
-					<a href="/products" class="block px-3 py-2 text-base font-medium {currentPath === '/products' ? 'text-white bg-purple-700' : 'text-purple-100 hover:text-white hover:bg-purple-800'}">Our Products</a>
-					<a href="/contact" class="block px-3 py-2 text-base font-medium {currentPath === '/contact' ? 'text-white bg-purple-700' : 'text-purple-100 hover:text-white hover:bg-purple-800'}">Contact Us</a>
-					<a href="/privacy" class="block px-3 py-2 text-base font-medium {currentPath === '/privacy' ? 'text-white bg-purple-700' : 'text-purple-100 hover:text-white hover:bg-purple-800'}">Privacy Policy</a>
+					<a href="{base}/" class="block px-3 py-2 text-base font-medium {currentPath === '/' ? 'text-white bg-purple-700' : 'text-purple-100 hover:text-white hover:bg-purple-800'}">Home</a>
+					<a href="{base}/about" class="block px-3 py-2 text-base font-medium {currentPath === '/about' ? 'text-white bg-purple-700' : 'text-purple-100 hover:text-white hover:bg-purple-800'}">About Us</a>
+					<a href="{base}/products" class="block px-3 py-2 text-base font-medium {currentPath === '/products' ? 'text-white bg-purple-700' : 'text-purple-100 hover:text-white hover:bg-purple-800'}">Our Products</a>
+					<a href="{base}/contact" class="block px-3 py-2 text-base font-medium {currentPath === '/contact' ? 'text-white bg-purple-700' : 'text-purple-100 hover:text-white hover:bg-purple-800'}">Contact Us</a>
+					<a href="{base}/privacy" class="block px-3 py-2 text-base font-medium {currentPath === '/privacy' ? 'text-white bg-purple-700' : 'text-purple-100 hover:text-white hover:bg-purple-800'}">Privacy Policy</a>
 				</div>
 			</div>
 		{/if}
@@ -83,9 +85,9 @@
 				<div>
 					<h3 class="text-xl font-bold mb-4">Quick Links</h3>
 					<ul class="space-y-2">
-						<li><a href="/about" class="text-purple-100 hover:text-white">About Us</a></li>
-						<li><a href="/products" class="text-purple-100 hover:text-white">Our Products</a></li>
-						<li><a href="/contact" class="text-purple-100 hover:text-white">Contact Us</a></li>
+						<li><a href="{base}/about" class="text-purple-100 hover:text-white">About Us</a></li>
+						<li><a href="{base}/products" class="text-purple-100 hover:text-white">Our Products</a></li>
+						<li><a href="{base}/contact" class="text-purple-100 hover:text-white">Contact Us</a></li>
 					</ul>
 				</div>
 				<div>
