@@ -2,6 +2,9 @@
   "name": "quick-receipts",
   "version": "0.0.1",
   "private": true,
+  "engines": {
+    "node": "18.x"
+  },
   "scripts": {
     "build": "vite build",
     "build:prod": "vite build --mode prod",
