@@ -8,6 +8,7 @@
   },
   "scripts": {
     "build": "vite build",
+    "vercel-build": "npm install && vite build",
     "build:prod": "vite build --mode prod",
     "build:mock": "vite build --mode mock",
     "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
