@@ -5,6 +5,8 @@
 	import WhyChooseUs from '$lib/components/WhyChooseUs.svelte';
 	import CallToAction from '$lib/components/CallToAction.svelte';
 	import CustomerStories from '$lib/components/CustomerStories.svelte';
+	import { base } from '$app/paths';
+
 	let isVisible = false;
 
 	onMount(() => {
@@ -29,12 +31,12 @@
 						</p>
 						<div class="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
 							<div class="rounded-md shadow">
-								<a href="/products" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-purple-900 hover:bg-purple-800 md:py-4 md:text-lg md:px-10">
+								<a href="{base}/products" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-purple-900 hover:bg-purple-800 md:py-4 md:text-lg md:px-10">
 									Our Products
 								</a>
 							</div>
 							<div class="mt-3 sm:mt-0 sm:ml-3">
-								<a href="/contact" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-purple-900 bg-white hover:bg-purple-50 md:py-4 md:text-lg md:px-10">
+								<a href="{base}/contact" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-purple-900 bg-white hover:bg-purple-50 md:py-4 md:text-lg md:px-10">
 									Contact Us
 								</a>
 							</div>
