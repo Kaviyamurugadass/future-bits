@@ -16,6 +16,15 @@ const config = {
         }),
         paths: {
             base: dev ? '' : '/future-bits'
+        },
+        prerender: {
+            handleHttpError: ({ path, referrer, message }) => {
+                // Ignore specific 404 errors during prerendering
+                if (message.includes('does not begin with `base`')) {
+                    return;
+                }
+                throw new Error(message);
+            }
         }
     }
 };
