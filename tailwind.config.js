@@ -46,7 +46,7 @@ export default {
           600: '#9333ea',
           700: '#7e22ce',
           800: '#6b21a8',
-          900: '#581c87'   // Darkest purple
+          900: '#BA55D3'   // Darkest purple
         }
       }
     }
