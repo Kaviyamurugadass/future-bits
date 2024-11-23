@@ -14,29 +14,40 @@ export default {
   theme: {
     extend: {
       colors: {
-        // flowbite-svelte
+        // Base Theme Colors - Change these to update the entire theme
+        themeColor: '#321353',    // Main brand color (purple)
+        secondaryColor: '#FD7D00',  // Secondary color (orange)
+        tertiaryColor: '#063B48',   // Tertiary color (dark green)
+        bgColor: '#ffffff',         // Main background color
+        primaryTextColor: '#ffffff', // Main text color
+        secondaryTextColor: '#E6E6E6', // Secondary text color
+        tertiaryTextColor: '#ffffff', // Light text color
+
+        // Automatic color variations based on primary color
         primary: {
-          50: '#FFF5F2',
-          100: '#FFF1EE',
-          200: '#FFE4DE',
-          300: '#FFD5CC',
-          400: '#FFBCAD',
-          500: '#FE795D',
-          600: '#EF562F',
-          700: '#EB4F27',
-          800: '#CC4522',
-          900: '#A5371B'
+          50: '#F2F0F5',   // Lightest
+          100: '#E5E0EB',
+          200: '#CBC2D6',
+          300: '#B1A3C2',
+          400: '#9785AD',
+          500: '#321353',  // Base color (same as themeColor-900)
+          600: '#280F42',
+          700: '#1E0B32',
+          800: '#140821',
+          900: '#0A0411'   // Darkest
         },
-        primaryColor: '#800080', //purple
-        secondaryColor : '#FD7D00', //orange
-        tertiaryColor: '#063B48', //darkgreen
-
-        bgColor : '#ffffff',  //white
-
-        primaryTextColor: "#063B48", //darkgreen
-        secondaryTextColor: '#E6E6E6', //gray
-        tertiaryTextColor: '#ffffff', //white
-
+        themeColor: {
+          50: '#faf5ff',   // Lightest purple
+          100: '#f3e8ff',
+          200: '#e9d5ff',
+          300: '#d8b4fe',
+          400: '#c084fc',
+          500: '#a855f7',  // Medium purple
+          600: '#9333ea',
+          700: '#7e22ce',
+          800: '#6b21a8',
+          900: '#581c87'   // Darkest purple
+        }
       }
     }
   }

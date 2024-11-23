@@ -126,7 +126,7 @@
 						<div>
 							<button
 								type="submit"
-								class="inline-flex justify-center rounded-md border border-transparent bg-purple-900 py-3 px-6 text-base font-medium text-white shadow-sm hover:bg-purple-800 focus:outline-none focus:ring-2 focus:ring-purple-700 focus:ring-offset-2">
+								class="inline-flex justify-center rounded-md border border-transparent bg-themeColor-900 py-3 px-6 text-base font-medium text-white shadow-sm hover:bgthemeColor-800 focus:outline-none focus:ring-2 focus:ringthemeColor-700 focus:ring-offset-2">
 								Send Message
 							</button>
 						</div>
