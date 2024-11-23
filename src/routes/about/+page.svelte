@@ -1,6 +1,8 @@
 <script>
 	import { onMount } from 'svelte';
 	import VisionMission from '$lib/components/VisionMission.svelte';
+	import { base } from '$app/paths';
+
 	let isVisible = false;
 
 	onMount(() => {
