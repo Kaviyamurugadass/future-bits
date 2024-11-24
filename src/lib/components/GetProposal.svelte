@@ -52,7 +52,7 @@
                                 id="name"
                                 bind:value={formData.name}
                                 required
-                                class="mt-1 block w-full px-4 py-3 rounded-lg border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 transition-colors duration-200 bg-gray-50"
+                                class="mt-1 block w-full px-4 py-3 rounded-lg border-gray-300 shadow-sm focus:border-themeColor-500 focus:ring-themeColor-500 transition-colors duration-200 bg-gray-50"
                                 placeholder="John Doe"
                             />
                         </div>
@@ -65,7 +65,7 @@
                                 id="email"
                                 bind:value={formData.email}
                                 required
-                                class="mt-1 block w-full px-4 py-3 rounded-lg border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 transition-colors duration-200 bg-gray-50"
+                                class="mt-1 block w-full px-4 py-3 rounded-lg border-gray-300 shadow-sm focus:border-themeColor-500 focus:ring-themeColor-500 transition-colors duration-200 bg-gray-50"
                                 placeholder="john@company.com"
                             />
                         </div>
@@ -77,7 +77,7 @@
                                 name="company"
                                 id="company"
                                 bind:value={formData.company}
-                                class="mt-1 block w-full px-4 py-3 rounded-lg border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 transition-colors duration-200 bg-gray-50"
+                                class="mt-1 block w-full px-4 py-3 rounded-lg border-gray-300 shadow-sm focus:border-themeColor-500 focus:ring-themeColor-500 transition-colors duration-200 bg-gray-50"
                                 placeholder="Your Company"
                             />
                         </div>
@@ -89,7 +89,7 @@
                                 name="projectType"
                                 bind:value={formData.projectType}
                                 required
-                                class="mt-1 block w-full px-4 py-3 rounded-lg border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 transition-colors duration-200 bg-gray-50"
+                                class="mt-1 block w-full px-4 py-3 rounded-lg border-gray-300 shadow-sm focus:border-themeColor-500 focus:ring-themeColor-500 transition-colors duration-200 bg-gray-50"
                             >
                                 <option value="">Select type</option>
                                 <option value="web">Web Development</option>
@@ -109,7 +109,7 @@
                             rows="4"
                             bind:value={formData.description}
                             required
-                            class="mt-1 block w-full px-4 py-3 rounded-lg border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 transition-colors duration-200 bg-gray-50"
+                            class="mt-1 block w-full px-4 py-3 rounded-lg border-gray-300 shadow-sm focus:border-themeColor-500 focus:ring-themeColor-500 transition-colors duration-200 bg-gray-50"
                             placeholder="Tell us about your project goals and requirements..."
                         ></textarea>
                     </div>
@@ -117,19 +117,19 @@
                     <div class="pt-4">
                         <button
                             type="submit"
-                            class="w-full flex justify-center items-center px-6 py-4 border border-transparent rounded-lg text-base font-medium text-white bg-gradient-to-r fromthemeColor-800 to-themeColor-900 hover:from-themeColor-900 hover:to-purple-950 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-500 transform transition-all duration-200 hover:scale-[1.02] shadow-lg hover:shadow-xl"
+                            class="w-full flex justify-center items-center px-6 py-4 border border-transparent rounded-lg text-base font-medium text-white bg-gradient-to-r from-themeColor-600 to-themeColor-700 hover:from-themeColor-700 hover:to-themeColor-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-themeColor-500 transform transition-all duration-200 hover:scale-[1.02] shadow-lg hover:shadow-xl"
                         >
-                            <span>Get Your Free Proposal</span>
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2" viewBox="0 0 20 20" fill="currentColor">
-                                <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                            Get Your Free Proposal
+                            <svg class="ml-2 -mr-1 w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
                             </svg>
                         </button>
                     </div>
 
                     <p class="text-center text-sm text-gray-500 mt-4">
                         By submitting this form, you agree to our 
-                        <a href="#" class="text-themeColor-900 hover:textthemeColor-700">Terms of Service</a> and 
-                        <a href="#" class="text-themeColor-900 hover:textthemeColor-700">Privacy Policy</a>
+                        <a href="#" class="text-themeColor-900 hover:text-themeColor-700">Terms of Service</a> and 
+                        <a href="#" class="text-themeColor-900 hover:text-themeColor-700">Privacy Policy</a>
                     </p>
                 </form>
             </div>

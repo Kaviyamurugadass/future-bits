@@ -46,8 +46,20 @@ export default {
           600: '#9333ea',
           700: '#7e22ce',
           800: '#6b21a8',
-          900: '#9333ea'   // Darkest purple
-        }
+          900: '#9333ea'   //581C87  Darkest purple
+        },
+      //   themeColor: {
+      //     50: '#f0f9ff',   // Lightest sky blue
+      //     100: '#e0f2fe',
+      //     200: '#bae6fd',
+      //     300: '#7dd3fc',
+      //     400: '#38bdf8',
+      //     500: '#0ea5e9',  // Medium sky blue
+      //     600: '#0284c7',
+      //     700: '#0369a1',
+      //     800: '#075985',
+      //     900: '#0284c7'   // Your primary/darkest sky blue (instead of #0c4a6e for better visibility)
+      // }
       }
     }
   }

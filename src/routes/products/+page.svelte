@@ -53,7 +53,7 @@
 							<div class="relative bg-white p-3 rounded-[2.8rem] shadow-2xl">
 								<img 
 									class="w-full h-auto rounded-[2.3rem] shadow-inner" 
-									src="{base}/images/Quick_receipt.jpeg" 
+									src="{base}/images/Business Presentation.png" 
 									alt="Quick Receipts Mobile App"
 								>
 								
@@ -82,7 +82,7 @@
 								<div class="flex-shrink-0">
 									<div class="flex items-center justify-center h-12 w-12 rounded-md bg-themeColor-900 text-white">
 										<svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-											<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"/>
+											<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6a2 2 0 002-2v-6a2 2 0 00-2-2H6"/>
 										</svg>
 									</div>
 								</div>
