@@ -36,42 +36,18 @@ export default {
           800: '#140821',
           900: '#0A0411'   // Darkest
         },
-        // themeColor: {
-        //   50: '#faf5ff',   // Lightest purple
-        //   100: '#f3e8ff',
-        //   200: '#e9d5ff',
-        //   300: '#d8b4fe',
-        //   400: '#c084fc',
-        //   500: '#a855f7',  // Medium purple
-        //   600: '#9333ea',
-        //   700: '#7e22ce',
-        //   800: '#6b21a8',
-        //   900: '#9333ea'   //581C87  Darkest purple
-        // },
-      //   themeColor: {
-      //     50: '#f0f9ff',   // Lightest sky blue
-      //     100: '#e0f2fe',
-      //     200: '#bae6fd',
-      //     300: '#7dd3fc',
-      //     400: '#38bdf8',
-      //     500: '#0ea5e9',  // Medium sky blue
-      //     600: '#0284c7',
-      //     700: '#0369a1',
-      //     800: '#075985',
-      //     900: '#0284c7'   // Your primary/darkest sky blue (instead of #0c4a6e for better visibility)
-      // },
-      themeColor: {
-        50: '#f0f9ff',   // Lightest blue-white
-        100: '#e0f2fe',
-        200: '#bae6fd',
-        300: '#7dd3fc',
-        400: '#38bdf8',
-        500: '#0ea5e9',  // Medium blue
-        600: '#0284c7',
-        700: '#0369a1',
-        800: '#075985',
-        900: '#0c4a6e'   // Darkest blue
-      },
+        themeColor: {
+          50: '#fefce8',   // Lightest yellow
+          100: '#fef9c3',
+          200: '#fef08a',
+          300: '#fde047',
+          400: '#facc15',
+          500: '#eab308',  // Medium yellow
+          600: '#ca8a04',
+          700: '#a16207',
+          800: '#854d0e',
+          900: '#713f12'   // Darkest yellow
+        },
       }
     }
   }
